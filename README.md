@@ -18,7 +18,7 @@ Em cada nível da recursão, o algoritmo realiza 𝑂(1) operações para combin
 
 Dois subproblemas são resolvidos (2T).
 
-O número de níveis da recursão é proporcional a log2𝑛, já que o tamanho do problema é reduzido pela metade a cada nível.
+O número de níveis da recursão é proporcional a log₂ 𝑛, já que o tamanho do problema é reduzido pela metade a cada nível.
 
 Em cada nível, são feitas `2^𝑘⋅𝑂(1)` operações, onde 𝑘 é o nível da recursão.
 
