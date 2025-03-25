@@ -20,23 +20,23 @@ Dois subproblemas são resolvidos (2T).
 
 O número de níveis da recursão é proporcional a log2𝑛, já que o tamanho do problema é reduzido pela metade a cada nível.
 
-Em cada nível, são feitas 2^𝑘 ⋅ 𝑂 (1) operações, onde 𝑘 é o nível da recursão.
+Em cada nível, são feitas `2^𝑘⋅𝑂(1)` operações, onde 𝑘 é o nível da recursão.
 
 Dessa forma, o número de operações cresce linearmente com n, e a complexidade assintótica é 𝑂(n).
 
 ## Complexidade Assintótica (Teorema mestre)
 
-Considerando a recorrência 𝑇(𝑛) = 2𝑇 (𝑛 / 2) + 𝑂(1) do algoritmo, temos:
+Considerando a recorrência `𝑇(𝑛) = 2𝑇 (𝑛 / 2) + 𝑂(1)` do algoritmo, temos:
 
 - a = 2
 - b = 2
 - f(n) = 𝑂(1)
 
-Calculamos p = log 𝑏 𝑎 = log2 2 = 1
+Calculamos p = log 𝑏 𝑎 = log₂ 2 = 1
 
 Comparando 𝑂(1) com 𝑂(n), o custo externo é menor que o custo da recursão, nos levando ao **Caso 1**.
 
-Logo, 𝑇(𝑛) = Θ(n)
+Logo, `𝑇(𝑛) = Θ(n)`
 
 
 ## Execução
