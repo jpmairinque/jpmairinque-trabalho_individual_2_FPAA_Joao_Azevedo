@@ -14,15 +14,15 @@ O algoritmo divide o array em duas partes aproximadamente iguais até que os cas
 - n = 1 (nenhuma comparação é feita)
 - n = 2 (uma única comparação é feita)
 
-Em cada nível da recursão, o algoritmo realiza 𝑂(1) operações para combinar os resultados.
+Em cada nível da recursão, o algoritmo realiza `𝑂(1)` operações para combinar os resultados.
 
-Dois subproblemas são resolvidos (2T).
+Dois subproblemas são resolvidos `(2T)`.
 
-O número de níveis da recursão é proporcional a log₂ 𝑛, já que o tamanho do problema é reduzido pela metade a cada nível.
+O número de níveis da recursão é proporcional a `log₂ 𝑛`, já que o tamanho do problema é reduzido pela metade a cada nível.
 
-Em cada nível, são feitas `2^𝑘⋅𝑂(1)` operações, onde 𝑘 é o nível da recursão.
+Em cada nível, são feitas `2^𝑘⋅𝑂(1)` operações, onde `𝑘` é o nível da recursão.
 
-Dessa forma, o número de operações cresce linearmente com n, e a complexidade assintótica é 𝑂(n).
+Dessa forma, o número de operações cresce linearmente com n, e a complexidade assintótica é `𝑂(n)`.
 
 ## Complexidade Assintótica (Teorema mestre)
 
@@ -34,7 +34,7 @@ Considerando a recorrência `𝑇(𝑛) = 2𝑇 (𝑛 / 2) + 𝑂(1)` do algorit
 
 Calculamos p = log 𝑏 𝑎 = log₂ 2 = 1
 
-Comparando 𝑂(1) com 𝑂(n), o custo externo é menor que o custo da recursão, nos levando ao **Caso 1**.
+Comparando 𝑂(1) com 𝑂(n), o custo externo é **menor** que o custo da recursão, nos levando ao **Caso 1**.
 
 Logo, `𝑇(𝑛) = Θ(n)`
 
