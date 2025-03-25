@@ -72,6 +72,14 @@ brew install python
 python --version
 ```
 
+## Saída da Execução
+
+```
+Digite uma série de números separados por espaço: 1 5 3 5 4 1 5 4 8 
+Menor elemento: 1, Maior elemento: 8
+Tempo de execução: 0.000061 segundos
+```
+
 ## Documentação e links úteis
 
 - [Divisão e Conquista - Wikipedia](https://pt.wikipedia.org/wiki/Divis%C3%A3o_e_conquista)
